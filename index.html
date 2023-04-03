@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Idade</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsivo.css">
+    <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="conteudo">
+            <div class="input-data">
+                <div>
+                    <label for="day" class="labels">DAY</label>
+                    <input type="number" name="day" id="day" placeholder="DD" class="inputs" oninput="validarDay()" onchange="validarEnvio()" autocomplete="off">
+                    <span class="required">Must be a valid day</span>
+                </div>
+
+                <div>
+                    <label for="month" class="labels">MONTH</label>
+                    <input type="number" name="month" id="month" placeholder="MM" class="inputs" oninput="validarMounth()" onchange="validarEnvio()" autocomplete="off">
+                    <span class="required">Must be a valid month</span>
+                </div>
+
+                <div>
+                    <label for="year" class="labels">YEAR</label>
+                    <input type="number" name="year" id="year" placeholder="YYYY" class="inputs" oninput="validarYear()" onchange="validarEnvio()" autocomplete="off">
+                    <span class="required">Must be a valid year</span>
+                </div>
+            </div>
+
+            <div class="line-btn">
+                <hr>
+                <button class="btn"><img src="assets/img/icon-arrow.svg" alt="" class="img" disabled></button>
+            </div>
+
+            <div class="result-data">
+                <div>
+                    <span class="span-Ano">--</span>
+                    <h1>years</h1>
+                </div>
+
+                <div>
+                    <span class="span-Mes">--</span>
+                    <h1>months</h1>
+                </div>
+
+                <div>
+                    <span class="span-Dia">--</span>
+                    <h1>days</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
