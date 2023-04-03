@@ -84,7 +84,9 @@ main {
 
 hr {
     width: 100%;
-    background-color: var(--Smokey-grey);
+    border: none;
+    height: 1px;
+    background-color: var(--Off-white);
 }
 
 .line-btn {
